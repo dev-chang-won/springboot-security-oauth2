@@ -19,6 +19,7 @@ spring:
       prefix: /templates/html/
       suffix: .mustache
   jpa:
+    open-in-view: false  
     hibernate:
       ddl-auto: update #[create,update,none]
       naming:

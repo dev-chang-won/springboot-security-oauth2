@@ -3,13 +3,11 @@ package com.ch1.springbootsecurityoauth2.controller;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.ch1.springbootsecurityoauth2.oauth2.PrincipalDetails;
 
 @Controller
 public class IndexController {

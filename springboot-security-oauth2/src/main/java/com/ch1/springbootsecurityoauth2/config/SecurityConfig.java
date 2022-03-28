@@ -11,14 +11,14 @@ import com.ch1.springbootsecurityoauth2.oauth2.PrincipalOauth2UserService;
 
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
-
-	@Autowired
-	private PrincipalOauth2UserService principalOauth2UserService;
 	
 	@Bean
 	public BCryptPasswordEncoder encodeStr() {
 		return new BCryptPasswordEncoder();
 	}
+	
+	@Autowired
+	private PrincipalOauth2UserService principalOauth2UserService;
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
